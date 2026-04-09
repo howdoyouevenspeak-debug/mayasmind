@@ -1,0 +1,253 @@
+/* HEADER */
+.osaka-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.osaka-header .star {
+  font-size: 60px;
+  color: #2cdc03;
+}
+
+.title-group {
+  text-align: center;
+}
+
+.title-group h1 {
+  color: #2cdc03;
+  font-size: 40px;
+  margin: 0;
+}
+
+.title-group p {
+  color: #2cdc03;
+  margin: 5px 0 0;
+}
+
+
+/* GRID CONTAINER */
+.osaka-container {
+  width: 85%;
+  height: 65vh; /* 👈 fixed visible area */
+
+  margin: clamp(20px, 5vw, 60px) auto;
+  border: 1px solid #aaa;
+  padding: clamp(20px, 4vw, 50px);
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: clamp(20px, 4vw, 50px);
+
+  overflow-y: auto; /* 👈 enables scrolling inside */
+  overflow-x: hidden;
+}
+
+/* CIRCLES */
+.circle {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border: 1px solid #aaa;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+  color: #2cdc03;
+
+  transition: 0.3s;
+}
+
+.circle:hover {
+  background: rgba(95, 208, 0, 0.08);
+  transform: scale(1.03);
+}
+
+/* TEXT INSIDE */
+.circle-content {
+  text-align: center;
+  padding: 20px;
+}
+
+.circle-content h2 {
+  font-size: 20px;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.circle-content p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Space Grotesk', sans-serif;
+  background: #f7f7f7;
+}
+
+/* HEADER */
+.osaka-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(20px, 5vw, 60px);
+  margin-top: clamp(20px, 4vw, 40px);
+}
+
+.osaka-header .star {
+  font-size: clamp(30px, 6vw, 70px);
+  color: #5fd000;
+}
+
+.title-group {
+  text-align: center;
+}
+
+.title-group h1 {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  margin: 0;
+}
+
+.title-group p {
+  font-size: clamp(0.8rem, 1.2vw, 1rem);
+}
+
+body {
+  margin: 0;
+  font-family: 'Space Grotesk', sans-serif;
+  background: #f7f7f7;
+}
+
+/* Fluid typography base */
+h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  letter-spacing: clamp(1px, 0.3vw, 3px);
+}
+
+h2 {
+  font-size: clamp(1rem, 2.2vw, 1.6rem);
+}
+
+p {
+  font-size: clamp(0.8rem, 1.2vw, 1rem);
+}
+
+/* GRID */
+.osaka-container {
+  width: 85%;
+  margin: clamp(20px, 5vw, 60px) auto;
+  border: 1px solid #aaa;
+  padding: clamp(20px, 4vw, 50px);
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: clamp(20px, 4vw, 50px);
+}
+
+/* CIRCLES */
+.circle {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border: 1px solid #aaa;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+  color: #5fd000;
+
+  transition: 0.3s;
+}
+
+.circle:hover {
+  background: rgba(95, 208, 0, 0.08);
+  transform: scale(1.03);
+}
+
+/* TEXT */
+.circle-content {
+  text-align: center;
+  padding: clamp(10px, 2vw, 25px);
+}
+
+.circle-content h2 {
+  font-size: clamp(0.9rem, 2vw, 1.4rem);
+  line-height: 1.3;
+}
+
+.circle-content p {
+  font-size: clamp(0.7rem, 1vw, 0.9rem);
+  margin-top: clamp(6px, 1vw, 12px);
+}
+
+/* BACK BUTTON */
+.back-home {
+  display: block;
+  width: fit-content;
+  margin: clamp(10px, 3vw, 30px) auto;
+
+  text-decoration: none;
+  color: #5fd000;
+
+  font-size: clamp(0.8rem, 1.2vw, 1rem);
+  letter-spacing: 1px;
+
+  border: 1px solid #5fd000;
+  padding: 8px 16px;
+
+  transition: 0.25s;
+}
+
+.back-home:hover {
+  background: #2cdc03;
+  color: white;
+}
+
+.circle-content h2 {
+  font-size: clamp(0.9rem, 2vw, 1.4rem);
+  line-height: 1.2;
+
+  transform: scaleY(0.75); /* 👈 squish vertically */
+  display: inline-block;
+
+  text-transform: uppercase;
+}
+
+.osaka-header .star {
+  font-size: clamp(30px, 6vw, 70px);
+  color: #2cdc03;
+
+  /* outline (border effect) */
+  -webkit-text-stroke: 2px #5fd000;
+
+  /* soften edges */
+  text-shadow:
+    0 0 2px #2cdc03,
+    0 0 6px rgba(95, 208, 0, 0.6);
+
+  /* optional: slightly lighter fill for contrast */
+  color: transparent;
+}
+
+.footer {
+  font-family: 'arial', sans-serif;
+  font-size: 40px;
+  color: #ff2bd6;
+  font-size: 20px;
+  display: flex;
+  justify-content: center; /* Horizontal centering */
+  align-items: center; 
+  position:relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding-bottom:10px;
+
+}

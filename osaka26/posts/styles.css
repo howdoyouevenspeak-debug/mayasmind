@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo+Narrow:wght@400&display=swap');
+
+/* 1. Margin at the top of the screen */
+.page-wrapper {
+  margin-top: 60px; 
+  display: flex;
+  justify-content: center;
+}
+
+/* 2. The Scrollable Rectangle Border */
+.osaka-post-container {
+  width: 900px;
+  height: 550px; /* Adjust this to change the rectangle's height */
+  border: 1px solid #000;
+  padding: 40px;
+  background-color: #f6ffdc;
+  
+  /* This makes the content scroll inside the border */
+  overflow-y: auto; 
+  overflow-x: hidden;
+}
+
+/* 3. The Stretched Header */
+.main-title {
+  font-family: 'arial', sans-serif;
+  font-size: 40px;
+  color: #2cdc03;
+  margin: 0;
+  text-transform: uppercase;
+  display: inline-block;
+  
+  /* Stretched on X and Y axis */
+  transform: scale(1, 1.5); 
+  transform-origin: left top;
+  
+  letter-spacing: -4px;
+}
+
+.header-group {
+  padding-top: 20px;
+  margin-bottom: 30px; /* Space for the Y-axis expansion */
+}
+
+.date-stamp {
+  font-family: 'Arial', sans-serif;
+  transform: scale(1, 1.5); 
+  color: #2cdc03;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.content-body p {
+  font-family: 'Arial', sans-serif;
+  font-size: 24px;
+  line-height: 1.1;
+  color: #000;
+  text-align: justify;
+}
+
+.back-home {
+  display: block;
+  width: fit-content;
+  margin: clamp(10px, 3vw, 30px) auto;
+
+  text-decoration: none;
+  color: #5fd000;
+
+  font-size: clamp(0.8rem, 1.2vw, 1rem);
+  letter-spacing: 1px;
+
+  border: 1px solid #5fd000;
+  padding: 8px 16px;
+
+  transition: 0.25s;
+}
+
+.back-home:hover {
+  background: #2cdc03;
+  color: white;
+}
+
+.footer {
+  font-family: 'arial', sans-serif;
+  font-size: 40px;
+  color: #ff2bd6;
+  font-size: 20px;
+  display: flex;
+  justify-content: center; /* Horizontal centering */
+  align-items: center; 
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding-bottom:10px;
+
+}
