@@ -76,6 +76,7 @@
 
 .back-home {
   display: block;
+  font: Arial;
   width: fit-content;
   margin: clamp(10px, 3vw, 30px) auto;
 
