@@ -64,7 +64,7 @@
 
   text-decoration: none;
   color: #5fd000;
-
+font-family: 'arial';
   font-size: clamp(0.8rem, 1.2vw, 1rem);
   letter-spacing: 1px;
 
