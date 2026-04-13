@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo+Narrow:wght@400&display=swap');
+.monsieur-la-doulaise-regular {
+  font-family: "Monsieur La Doulaise", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
 
 /* 1. Margin at the top of the screen */
 .page-wrapper {
@@ -58,7 +63,8 @@
 }
 
 .content-body p, li {
-  font-family: 'Arial', sans-serif;
+  
+  font-family:"Monsieur La Doulaise", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 24px;
   line-height: 1.1;
   color: black;
