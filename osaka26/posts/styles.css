@@ -74,6 +74,23 @@
   transition: 0.25s;
 }
 
+.back-home {
+  display: block;
+  width: fit-content;
+  margin: clamp(10px, 3vw, 30px) auto;
+
+  text-decoration: none;
+  color: #5fd000;
+
+  font-size: clamp(0.8rem, 1.2vw, 1rem);
+  letter-spacing: 1px;
+
+  border: 1px solid #5fd000;
+  padding: 8px 16px;
+
+  transition: 0.25s;
+}
+
 .back-home:hover {
   background: #2cdc03;
   color: white;
