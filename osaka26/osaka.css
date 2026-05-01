@@ -251,3 +251,19 @@ p {
   padding-bottom:10px;
 
 }
+
+.specialcircle {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border: 1px solid #aaa;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+  color: #ffffff;
+
+  transition: 0.3s;
+}
