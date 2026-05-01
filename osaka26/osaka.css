@@ -253,6 +253,7 @@ p {
 }
 
 .specialcircle {
+  background-color:black;
   width: 100%;
   aspect-ratio: 1 / 1;
   border: 1px solid #aaa;
@@ -263,7 +264,7 @@ p {
   justify-content: center;
 
   text-decoration: none;
-  color: black;
+  color: white;
 
   transition: 0.3s;
 }
