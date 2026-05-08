@@ -138,3 +138,39 @@ tbody tr:nth-child(even) {
 tbody tr:hover {
   background-color: #f1f1f1; /* Interactive highlight */
 }
+
+.track-container {
+  overflow: hidden; /* Hides the slides that aren't active */
+  width: 100%;
+  position: relative;
+}
+
+.carousel {
+  border: 1px solid #333;   /* Rounded corners */
+  padding: 5px;           /* Background color of the frame */
+  
+  position: relative;
+  width: 600px;  
+  height: 500px;           /* Set a fixed width or 100% */
+  margin: 0 auto;           /* Centers it on the page */
+}
+
+.carousel-controls {
+  position: absolute;
+  bottom: -40px;      /* Adjust this to move it up/down on your border */
+  width: 100%;        /* Makes the container span the whole width */
+  display: flex;      /* Enables Flexbox */
+  justify-content: center; /* Centers the buttons horizontally */
+  gap: 20px;          /* Adds perfect spacing between the two buttons */
+  pointer-events: none; /* Prevents the invisible container from blocking clicks */
+}
+
+.track {
+  display: flex; 
+  list-style: none;
+  padding: 0;
+}
+
+.slide {
+  min-width: 100%; /* Each slide takes up the full width of the window */
+}
