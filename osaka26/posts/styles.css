@@ -138,11 +138,12 @@ tbody tr:nth-child(even) {
 tbody tr:hover {
   background-color: #f1f1f1; /* Interactive highlight */
 }
-
 .track-container {
   overflow: hidden; /* Hides the slides that aren't active */
   width: 100%;
   position: relative;
+
+  
 }
 
 .carousel {
@@ -153,7 +154,6 @@ tbody tr:hover {
   width: 600px;  
   height: 500px;           /* Set a fixed width or 100% */
   margin: 0 auto;           /* Centers it on the page */
-
 
  overflow-y: auto; 
   overflow-x: hidden;
@@ -167,8 +167,6 @@ tbody tr:hover {
   justify-content: center; /* Centers the buttons horizontally */
   gap: 20px;          /* Adds perfect spacing between the two buttons */
   pointer-events: none; /* Prevents the invisible container from blocking clicks */
-
-
 }
 
 .track {
