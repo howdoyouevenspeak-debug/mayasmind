@@ -153,6 +153,10 @@ tbody tr:hover {
   width: 600px;  
   height: 500px;           /* Set a fixed width or 100% */
   margin: 0 auto;           /* Centers it on the page */
+
+
+ overflow-y: auto; 
+  overflow-x: hidden;
 }
 
 .carousel-controls {
@@ -163,6 +167,8 @@ tbody tr:hover {
   justify-content: center; /* Centers the buttons horizontally */
   gap: 20px;          /* Adds perfect spacing between the two buttons */
   pointer-events: none; /* Prevents the invisible container from blocking clicks */
+
+
 }
 
 .track {
