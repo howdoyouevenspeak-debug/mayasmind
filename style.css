@@ -30,10 +30,12 @@ body {
   margin-top: 10px;
 }
 
+
 /* RIGHT SIDE */
 .right {
   width: 60%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -41,16 +43,18 @@ body {
 /* CARD */
 .card {
   width: 80%;
-  height: 80%;
+  height: 700px;
   border: 1px solid #aaa;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
+  flex-direction: column;
   padding: 20px;
   box-sizing: border-box;
+  
 }
 
 .card-header {
-  width: 100%;
+  width: 90%;
   border: 1px solid #aaa;
   padding: 20px;
   text-decoration: none;
@@ -67,5 +71,28 @@ body {
 
 .card-header .date {
   color: #39d000;
+  font-size: 14px;
+}
+
+.bookcard-header {
+  width: 90%;
+  border: 1px solid #aaa;
+  padding: 20px;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e26329;
+  font-family:cursive;
+}
+
+.bookcard-header .title{
+  color: #edcdbc;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.bookcard-header .date{
+  color: #edcdbc;
   font-size: 14px;
 }
