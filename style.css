@@ -25,7 +25,7 @@ body {
 }
 
 .left p {
-  color: #39d000;
+  color: #ff4000;
   font-size: 20px;
   margin-top: 10px;
 }
@@ -82,17 +82,42 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #e26329;
+  background-color: #2929e2;
   font-family:cursive;
 }
 
 .bookcard-header .title{
-  color: #edcdbc;
+  color: #f9ff47;
   font-weight: bold;
   font-size: 20px;
 }
 
 .bookcard-header .date{
   color: #edcdbc;
+  font-size: 14px;
+}
+
+.till20card-header {
+  width: 90%;
+  border: 1px solid #aaa;
+  padding: 20px;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1d1d1d;
+  font-family:'Courier New', Courier, monospace;
+}
+
+
+
+.till20card-header .title{
+  color: #ff4000;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.till20card-header .date{
+  color: #ff4000;
   font-size: 14px;
 }
